@@ -42,6 +42,11 @@ saleTable.render();
 const chartManager = new ChartManager(saleList, kpi);
 chartManager.renderSalesByDay();
 chartManager.renderSalesByCategory();
+chartManager.renderAverageSalesPerDay();
+chartManager.renderAverageSalesByCategory();
+chartManager.renderTopDays();
+chartManager.renderCategoryDistribution();
+chartManager.renderSalesBySeller();
 
 // Modal
 const saleModal = new SaleModal(saleList, kpi, saleTable, chartManager);
